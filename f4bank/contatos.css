@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.inicio-pagina {
+    background-image: linear-gradient(to right,#fcc051,#da8e03,#ffba3a);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 1px 1px 3px  #da8e03;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.inicio-pagina  img {
+    width: 100px;
+}
+
+/* parte dos links */
+.inicio-pagina .links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+}
+.inicio-pagina .links a:hover {
+    border: 1px solid #f1f1f1;
+    color: #da8e03;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #00000083;
+}
+
