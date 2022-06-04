@@ -53,3 +53,77 @@
     font-size: 15px;
     width: 150px;
 }
+
+
+
+/* aplica estilo do campo de formulario dentro main*/
+.container-principal input{
+    font-size: 1em;   
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.campo-formulario{
+    margin-bottom: 10px;
+}
+
+.container-principal label{
+    font-size: 1.2em;
+}
+
+.container-principal h2{
+    margin-bottom: 10px;
+}
+
+/*aplica estilo no container principal ( main ) */
+.container-principal{
+    position: relative;
+    background-image: linear-gradient(to right,#fcc051,#da8e03,#ffba3a);
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #fff;
+    border-radius: 10px;
+    float: right;
+}
+
+.container-principal form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*aplica estilo no botão do form */
+
+#botao{
+    margin-top: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+
+}
+
+/*aplica estilo no texto do lado do camplo do formulario */
+.texto-laranja{
+    color:rgb(243, 125, 47);
+    font-size: 48px;
+}
+
+h2 span{
+    font-size: 48px;
+}
+
+.container-frase{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
