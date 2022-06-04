@@ -5,27 +5,30 @@
     object-fit: cover;
 }
 
+/* inicio, container que envolve todo header */
 .inicio-pagina {
     background-image: linear-gradient(to right,#fcc051,#da8e03,#ffba3a);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     box-shadow: 1px 1px 3px  #da8e03;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 .inicio-pagina  img {
-    width: 100px;
+    width: 80px;
 }
 
 
-/* parte dos links */
+/* inicio, parte dos links */
 .inicio-pagina .links a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     padding: 15px;
+    margin: 10px 5px;
 }
 .inicio-pagina .links a:hover {
     border: 1px solid #f1f1f1;
@@ -35,15 +38,16 @@
     box-shadow: 1px 1px 3px #00000083;
 }
 
-/* segunda parte do inicio, login usuario*/
+/* inicio, parte login de usuario*/
 .inicio-pagina .login {
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid;
     padding: 10px;
     border-radius: 15px;
-    background-color: #ffb01ef8;
+    background-image: linear-gradient(to left,#ffb01ef8, #ffc82f, rgba(240, 136, 0, 0.333) ) ;
     color: #fff;
-    
+    font-size: 20px;
 }
 .login div {
     margin: 0 10px;
@@ -51,7 +55,9 @@
 .login input {
     border-radius: 5px;
     font-size: 15px;
-    width: 150px;
+    width: 140px;
+    padding: 4px;
+    margin: 2px 0;
 }
 
 
