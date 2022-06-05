@@ -14,29 +14,15 @@
 
 </head>
 <body>
-
-    <header class="inicio-pagina">
-        <a href="#"><img src="imagens/F4B.png"></a>
+    <header class="inicio-pagina" id="inicio">
+        <a href="index.html"><img src="imagens/F4B.png"></a>
         <nav class="links">
-            <a href="#">F4bank</a>
-            <a href="Sobre/sobre.html">Sobre</a>
-            <a href="Contatos/contatos.html">Contatos</a>
-            <a href="Central-ajuda/central-de-ajuda.html">Central de ajuda</a>
+            <a href="#f4bank">F4bank</a>
+            <a target="_blanck" href="Sobre/sobre.html">Sobre</a>
+            <a href="#contatos">Contatos</a>
+            <a target="_blanck" href="Central-ajuda/central-de-ajuda.html">Central de ajuda</a>
         </nav>
-        <div class="login">
-            <div class="login-email">
-                <form >
-                    <label>E-mail</label><br> 
-                    <input type="email" name="email-log" id="email-log" placeholder="Digite seu e-mail">
-                </form>
-            </div>
-            <div class="login-senha">
-                <form>
-                    <label>Senha</label><br>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
-                </form>
-            </div>
-        </div>    
+        <a class="botao-login" href="Login/login.html">Login ></a>  
     </header>
 
     <div class="container-principal">
@@ -49,36 +35,35 @@
                 <span class="texto-laranja">Nação Laranja.</span>
             </span>
             </h2>
-    
         </div>
 
-        <div class="container-form">
+        <div class="container-form" id="cadastro">
             <main>
                 <h2>Abra agora sua Conta Digital</h2>
                 <form>
-                    <label>Nome</label>
+                    <label for="nome">Nome Completo:</label>
                     <br>
                     <input class="campo-formulario" type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     <br>
-                    <label>E-mail</label>
+                    <label for="email">E-mail:</label>
                     <br>
                     <input class="campo-formulario" type="email" name="email" id="email" placeholder="Seu e-mail">
                     <br>
-                    <label>CPF</label>
+                    <label for="cpf">CPF:</label>
                     <br>
-                    <input class="campo-formulario" type="number" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                    <input class="campo-formulario" type="text" name="cpf" id="cpf" maxlength="11" placeholder="Digite seu CPF">
                     <br>
-                    <label>Telefone</label>
+                    <label for="tel">Telefone:</label>
                     <br>
-                    <input class="campo-formulario" type="tel" name="telefone" id="tel" placeholder="Digite seu numero">
+                    <input class="campo-formulario" type="tel" name="tel" id="tel" placeholder="Digite seu numero">
                     <br>
-                    <label>Data de Nascimento</label>
+                    <label for="data">Data de Nascimento:</label>
                     <br>
-                    <input class="campo-formulario" type="tel" name="data" id="data" placeholder="dd/mm/aaaa" maxlength="10">
+                    <input class="campo-formulario" type="tel" name="data" id="data"  placeholder="dd/mm/aaaa" maxlength="10">
                     <br>
-                    <div>
-                        <input type="checkbox">
-                        <span>Autorio o F4bank a tratar meus dados <br> pessoais para envio de comunicações <br>
+                    <div class="checkbox">
+                        <input type="checkbox" >
+                        <span>Autoriso o F4bank a tratar meus dados <br> pessoais para envio de comunicações <br>
                         sobre seus produtos e serviços e  <br>
                         também estou de acordo com a <br>
                         <span>Política de Privacidade</span></span>
@@ -90,5 +75,45 @@
         </div>
     </div>
     
+    <section class="cashback">
+        <div>
+            <h2>O F4Bank já devolveu tudo isso de cashback:</h2>
+        </div>
+        <div>            
+            <span>R$ 447.633.431,97</span>
+        </div>
+        <div>
+            <p>Quer ganhar cashback também? Clique no botão abaixo:</p>
+        </div>
+        <div class="link-cashback">
+            <a href="#cadastro">Ganhar cashback </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-secundario" id="f4bank">
+            <div class="frase-containerSec">
+                <h2>
+                    <span class="texto-laranja">Conta do F4Bank</span><br>
+                    A conta que vai levar você ao<br>
+                    controle da sua vida financeira.
+                </h2>
+                <a href="#inicio" class="texto-laranja">Sem tarifas e sem complicações</a>
+            </div>
+
+            <div class="img-containerSec">
+                <img src="imagens/1649356374-.webp">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatos">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="Central-ajuda/central-de-ajuda.html">Central de ajudas</a>
+            <a href="Central-ajuda/central-de-ajuda.html">Central de ajudas</a>
+            <a href="Central-ajuda/central-de-ajuda.html">Central de ajudas</a>
+        </nav>
+    </footer>
 </body>
 </html>

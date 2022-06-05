@@ -5,32 +5,61 @@
     object-fit: cover;
 }
 
+/* inicio, container que envolve todo header */
 .inicio-pagina {
-    background-image: linear-gradient(to right,#fcc051,#da8e03,#ffba3a);
+    background-image: linear-gradient(to right,#fcc051,#f37d2f,#f37d2fe3);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    box-shadow: 1px 1px 3px  #da8e03;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px  #0e0900a1;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    min-height: 110px;
 }
 .inicio-pagina  img {
-    width: 100px;
+    width: 80px;
+    margin-bottom: 15px;
 }
+/* ------------------------------------------------*/
 
-/* parte dos links */
+/* inicio, parte dos links */
 .inicio-pagina .links a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
     padding: 15px;
+    margin: 10px 5px;
+    border-radius: 15px;
 }
 .inicio-pagina .links a:hover {
-    border: 1px solid #f1f1f1;
-    color: #da8e03;
+    transition: 150ms;
+    color: #050505;
     background-color: #f1f1f1;
-    border-radius: 15px;
     box-shadow: 1px 1px 3px #00000083;
 }
 
+.inicio-pagina .links a:active {
+    color: #da8e03;
+}
+/* ------------------------------------------------*/
+
+/* inicio, parte login de usuario*/
+.inicio-pagina .botao-login {
+    font-size: 35px;
+    color: #f8f8f8;
+    padding: 10px 35px ;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.inicio-pagina .botao-login:hover {
+    background-color: #f1f1f1;
+    color: black;
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 3px #00000083;
+    text-decoration: underline;
+}
+.inicio-pagina .botao-login:active {
+    color: #da8e03;
+}
+/* ------------------------------------------------*/
