@@ -1,23 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central de Ajuda</title>
     <link rel="stylesheet" href="central-de-ajuda.css">
+    <link href="../imagens/F4B.png" rel="icon">
 </head>
-    <header class="inicio-pagina">
-        <a href="#"><img src="imagens/F4B.png"></a>
-        <nav class="links">
-            <a href="index.html">F4back</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="contatos.html">Contatos</a>
-            <a href="central-de-ajuda.html">Central de ajuda</a>
-        </nav>
-        <input type="text" name="search" placeholder="Busca">
-</header>
 <body>
+    <header id="inicio-central" class="inicio-pagina">
+        <a href="/index.html"><img src="/imagens/F4B.png"></a>
+        <nav class="links">
+            <a href="/index.html">F4bank</a>
+            <a href="/Sobre/sobre.html">Sobre</a>
+            <a href="#inicio-central">Central de ajuda</a>
+        </nav>
+        <a class="botao-login" href="../login/login.html">Login ></a>
+    </header>
     
+    <main>
+        <div>
+            <h1>
+                <span>
+                    Dicas e respostas da Equipe F4bank
+                </span>
+            </h1>
+        </div>
+
+        <div class="sobre-conta">
+            <h2>Sobre a conta digital F4bank</h2>
+        </div>
+
+
+        <div class="container-perguntas">    
+            <div class="container2">
+            <h3>O que é um conta digital do F4bank? </h3>
+                <img  id="pergunta1" src="../imagens/icone-de-mais.png" rel="icon" alt="icone do sinal de mais"
+                onclick="transformaEmMenos();"
+                onclick= "transformaEmMais();" >
+            </div>
+
+            <div id="resposta01">
+                <br><br>
+                <span>A conta digital do F4bank foi projetada para todos que desejam serviços bancários transparentes, simples e sem taxas abusivas.
+                    <br> Ele foi criado para redefinir a maneira como você administra seu dinheiro. Para cumprir esse papel, a conta digital do F4bank:
+                </span>
+                    <br><br>
+                <p>— Oferece transferências gratuitas e ilimitadas para qualquer banco; </p>
+                <br>
+                <p>— Inclui um cartão com opção de débito para que possa efetuar compras ou levantamentos em dinheiro. </p>
+                <br>
+                <p>— Não possui anuidade ou taxas de manutenção;</p>
+            </div>
+
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+            <h3>Existem taxas?</h3>
+                <img id="pergunta2"   src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos2();"
+                onclick= "transformaEmMais2();">
+            </div>
+            <div id="resposta02">
+                <br><br>
+                <span>Sua conta digital do F4bank não tem anuidade, e você não pagará nada para transferir seu dinheiro para outro banco ou para fazer depósitos via boleto bancário. Você também não paga nada para receber ou ativar um cartão com a opção de débito. </span>
+                <br><br>
+                <span>Nossos clientes podem utilizar qualquer caixa eletrônico das redes Banco24Horas e Saque e Pague para realizar saques. Contudo, você pagará uma taxa de R$ 4,50 para cada saque realizado, que é exatamente o que temos que pagar para usar essas redes de saque.</span>
+            
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+            <h3>Qual é o tipo da conta digital do F4bank?</h3>
+                <img id="pergunta3" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos3();"
+                onclick= "transformaEmMais3();">
+            </div>
+            <div id="resposta03">
+                <br><br>
+                <span>Nós possuimos dois tipos de conta: a conta pagamento e a conta corrente.</span>
+                <br>
+                <span>Diferença entre as contas: </span>
+
+                <br><br>
+
+                <span>A diferença da conta pagamento para corrente é a liberação de alguns serviços como, por exemplo, o CDB, limite de crédito e a escolha de cor do cartão. Esses, são serviços que só quem possui a conta corrente podem utilizar. <br>
+                Além disso, conta pagamento é voltada para clientes que possuem apenas a função débito liberada.
+                </span>
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Para quem é a conta do F4bank?</h3>
+                <img id="pergunta4" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos4();"
+                onclick= "transformaEmMais4();">
+            </div>
+            <div id="resposta04">
+                <br><br>
+                <span>Você não precisa passar por nenhum tipo de verificação de crédito para abrir uma conta digital do F4bank. Realizamos apenas uma análise de inscrição. Além disso, nossos únicos requisitos para os clientes são: <br> 
+                ter no mínimo 18 anos, ser residente no Brasil, ter CPF regular na Receira Federal Brasileira e um smartphone compatível com nosso aplicativo para Android ou iOS.</span>
+            </div>
+        </div>
+
+        <div class="sobre-conta">
+            <h2>Sobre o cartão F4bank</h2>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Quais taxas são cobradas pelo cartão F4bank?</h3>
+                <img id="pergunta5" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos5();"
+                onclick= "transformaEmMais5();">
+            </div>
+            <div id="resposta05">
+                <br><br>
+                <span> Como usamos canais 100% digitais e reduzimos ao mínimo a burocracia, podemos repassar a você apenas economia, e não custos. A única taxa que temos para o cartão de crédito F4bank é para a adesão ao programa de benefícios do nosso cartão. Ao contrário da maioria dos outros cartões, essa taxa é opcional e nos permite oferecer ainda mais benefícios para ajudá-lo a otimizar sua vida.</span>
+            </div>
+        </div>
+        
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Quais são as vantagens do nosso cartão de crédito?</h3>
+                <img id="pergunta6" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos6();"
+                onclick= "transformaEmMais6();">
+            </div>
+            <div id="resposta06">
+                <br><br>
+                <span>Além do controle simples e transparente de seus gastos em tempo real (sem taxas ou anuidade), você também pode obter descontos por pagar suas parcelas antecipadamente. No app, você ainda pode bloquear e desbloquear seu cartão, solicitar aumento de limite de crédito e alterar a data de vencimento da sua fatura. Saiba mais sobre cada funcionalidade e seus respectivos termos em nossa página inicial.</span>
+            </div>
+        </div>
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Para quem é o nosso cartão de crédito</h3>
+                <img id="pergunta7" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos7();"
+                onclick= "transformaEmMais7();">
+            </div>
+            <div id="resposta07">
+                <br><br>
+                <span>
+                    O cartão de crédito F4bank foi pensado para todos que desejam uma experiência simples e transparente na hora de gerenciar seus gastos.<br>
+                    Os requisitos são os mesmos para abrir um conta digital, são eles: <br>
+                    ter no mínimo 18 anos, ser residente no Brasil, ter CPF regular na Receira Federal Brasileira e um smartphone compatível com nosso aplicativo para Android ou iOS.  <br><br>
+                    Todos os interessados ​​em ter um cartão F4bank passam por uma avaliação de cadastro e uma verificação de crédito. 
+                </span>
+            </div>
+        </div>
+
+
+        <div class="sobre-conta">
+            <h2>Contato do F4bank </h2>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Como entro em contato com o F4bank?</h3>
+                <img id="pergunta8" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos8();"
+                onclick= "transformaEmMais8();">
+            </div>
+            <div id="resposta08">
+                <br><br>
+                <span>
+                Você pode entrar em contato com a gente pelo telefone, no 4124 5381 (Capitais e Regiões Metropolitanas), 0800 123 0529 (demais localidades). Caso você seja deficiente de fala e audição, entre em contato com a gente através do 0800 123 9876. 
+                <br>
+                Caso prefira, você também pode entrar em contato com a gente pelo chat.  
+                Nossos canais de atendimento estão disponíveis 24h, todos os dias da semana.</span>
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Como falo no SAC do F4bank</h3>
+                <img id="pergunta9" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos9();"
+                onclick= "transformaEmMais9();">
+            </div>
+            <div id="resposta09">
+                <br><br>
+                <span>Você pode falar no nosso SAC através do telefone 0800 101 0101. Este canal está disponível 24h,<br> 
+                todos os dias da semana.</span>
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Quero registrar uma reclamação. O que faço?</h3>
+                <img id="pergunta10" src="../imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos10();"
+                onclick= "transformaEmMais10();">
+            </div>
+            <div id="resposta10">
+                <br><br>
+                <span>
+                    Nosso setor de atendimento está pronto para te ajudar! <br>
+                    Entre em contato conosco através do telefone 4124 5381 para capitais e regiões metropolitanas ou 0800 123 0529 para demais localidades. 
+                </span>
+                <br><br>
+                <span>
+                    Caso o seu problema não seja resolvido e você queira registrar uma reclamação, entre em contato com a Ouvidoria no telefone 0800 321 9786.
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <script src="../javascript/scripts.js" defer></script>
 </body>
 </html>

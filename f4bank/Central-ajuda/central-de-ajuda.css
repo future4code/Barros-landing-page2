@@ -5,6 +5,8 @@
     object-fit: cover;
 }
 
+/* --------------------- aplica estilo no menu da página ---------------------------*/
+
 .inicio-pagina {
     background-image: linear-gradient(to right,#fcc051,#da8e03,#ffba3a);
     display: flex;
@@ -15,9 +17,12 @@
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+
+/* define tamanho da logo */
 .inicio-pagina  img {
-    width: 100px;
+    width: 80px;
 }
+
 
 /* parte dos links */
 .inicio-pagina .links a {
@@ -32,4 +37,128 @@
     background-color: #f1f1f1;
     border-radius: 15px;
     box-shadow: 1px 1px 3px #00000083;
+}
+/* ------------------------------------------------------------------------------*/
+
+
+/*----------- aplica estilo no botão de login ------------*/
+
+.inicio-pagina .botao-login{
+    font-size: 35px;
+    color: #f8f8f8;
+    padding: 10px 35px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.inicio-pagina .botao-login:hover{
+    background-color: #f1f1f1;
+    color:black;
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 3px #00000083;
+    /* text-decoration: underline; */
+}
+.inicio-pagina .botao-login:active{
+    color:#da8e03;
+}
+
+/*-------------------------------------------------------*/
+
+
+/* -------------define display e padding para a MAIN ----------*/
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/*-------------- aplica um tamanho de fonte para todos os h3 ------------------*/
+h3{
+    font-size: 26.4px;
+}
+
+/* ---------------------------- aplica estilo para titulos (h2) ------------------------- */
+.sobre-conta{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color:#da8e03;
+}
+
+
+/* --------------------------- aplica estilo para todos os containers que envolvem uma pergunta --------------------*/ 
+.container-perguntas{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 5px;
+    width:70%;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px; */
+}
+
+/*-----esse também aplica estilo para o container da pergunta, mas o foco desse é mais para fazer o posicionamento do conteúdo interno dele -------*/
+.container2{
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------- define um tamanho de fonte das tag span que está dentro da tag h1 ---------------------*/
+
+h1 span{
+    font-size: 2rem;
+}
+
+/* ----------  aplica estilos de fontes para as tags span e p -------------------------------*/
+span, p {
+    font-family: "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    line-height: 1.32;
+}
+
+/* ----------------- define tamanho da imagem/ icone do sinal de mais( + ) ------------------------- */
+div img{
+    width: 1.3em;
+}
+
+/* -------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* --------------------------Aplica o display: none em todos ícones com o sinal de mais  para fazer o javascript funcionar ---------------------- */
+
+#resposta01{
+    display: none;
+}
+#resposta02{
+    display: none;
+}
+#resposta03{
+    display: none;
+}
+#resposta04{
+    display: none;
+}
+#resposta05{
+    display: none;
+}
+#resposta06{
+    display: none;
+}
+#resposta07{
+    display: none;
+}
+#resposta08{
+    display: none;
+}
+#resposta09{
+    display: none;
+}
+#resposta10{
+    display: none;
 }
