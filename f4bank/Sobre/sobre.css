@@ -63,3 +63,55 @@
     color: #da8e03;
 }
 /* ------------------------------------------------*/
+
+/*   Display de texto sobre */
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif ;
+}
+
+/*fonte de todas h1*/
+h1{
+    font-size: 38px;
+}
+
+/* fonte de todos os p */
+p{
+    margin: 0px 0px 16px;
+    white-space: pre-line;
+    font-size: 1.5rem
+       
+}
+
+.Texto1, .Texto2{
+    text-align: center;
+}
+/* nosso rodapé */
+
+footer{
+    background-color: #f37d2f;
+    font-family: 'Roboto', sans-serif ;
+    color: black;
+    text-align: center;
+}
+
+footer>div{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* imagem rodapé */
+footer>div>img{
+    width: 80px;
+    margin-bottom: 15px;
+}
