@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+/* inicio, container que envolve todo header */
+.inicio-pagina {
+    background-image: linear-gradient(to right,#fcc051,#f37d2f,#f37d2fe3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px  #0e0900a1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    min-height: 110px;
+}
+.inicio-pagina  img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+/* ------------------------------------------------*/
+
+/* inicio, parte dos links */
+.inicio-pagina .links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px 5px;
+    border-radius: 15px;
+}
+.inicio-pagina .links a:hover {
+    transition: 150ms;
+    color: #050505;
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 3px #00000083;
+}
+
+.inicio-pagina .links a:active {
+    color: #da8e03;
+}
+/* ------------------------------------------------*/
+
+/* inicio, parte login de usuario*/
+.inicio-pagina .botao-login {
+    font-size: 35px;
+    color: #f8f8f8;
+    padding: 10px 35px ;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.inicio-pagina .botao-login:hover {
+    background-color: #f1f1f1;
+    color: black;
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 3px #00000083;
+    text-decoration: underline;
+}
+.inicio-pagina .botao-login:active {
+    color: #da8e03;
+}
+/* ------------------------------------------------*/
+
+/*   Display de texto sobre */
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif ;
+}
+
+/*fonte de todas h1*/
+h1{
+    font-size: 38px;
+}
+
+/* fonte de todos os p */
+p{
+    margin: 0px 0px 16px;
+    white-space: pre-line;
+    font-size: 1.5rem
+       
+}
+
+.Texto1, .Texto2{
+    text-align: center;
+}
+/* nosso rodapé */
+
+footer{
+    background-color: #f37d2f;
+    font-family: 'Roboto', sans-serif ;
+    color: black;
+    text-align: center;
+}
+
+footer>div{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* imagem rodapé */
+footer>div>img{
+    width: 80px;
+    margin-bottom: 15px;
+}
