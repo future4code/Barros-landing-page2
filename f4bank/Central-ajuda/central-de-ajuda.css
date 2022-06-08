@@ -8,21 +8,22 @@
 /* --------------------- aplica estilo no menu da página ---------------------------*/
 
 .inicio-pagina {
-    background-image: linear-gradient(to right,#fcc051,#da8e03,#ffba3a);
+    background-image: linear-gradient(to right,#fcc051,#f37d2f,#f37d2fe3);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    box-shadow: 1px 1px 3px  #da8e03;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px  #0e0900a1;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    min-height: 110px;
 }
 
 /* define tamanho da logo */
 .inicio-pagina  img {
     width: 80px;
 }
-
 
 /* parte dos links */
 .inicio-pagina .links a {
@@ -41,7 +42,7 @@
 /* ------------------------------------------------------------------------------*/
 
 
-/*----------- aplica estilo no botão de login ------------*/
+/* aplica estilo no botão de login */
 
 .inicio-pagina .botao-login{
     font-size: 35px;
@@ -65,7 +66,7 @@
 /*-------------------------------------------------------*/
 
 
-/* -------------define display e padding para a MAIN ----------*/
+/* define display e padding para a MAIN */
 main{
     display:flex;
     flex-direction: column;
@@ -74,12 +75,12 @@ main{
     padding: 50px;
 }
 
-/*-------------- aplica um tamanho de fonte para todos os h3 ------------------*/
+/* aplica um tamanho de fonte para todos os h3 */
 h3{
     font-size: 26.4px;
 }
 
-/* ---------------------------- aplica estilo para titulos (h2) ------------------------- */
+/*  aplica estilo para titulos (h2) */
 .sobre-conta{
     margin-bottom: 50px;
     margin-top: 50px;
@@ -87,17 +88,19 @@ h3{
 }
 
 
-/* --------------------------- aplica estilo para todos os containers que envolvem uma pergunta --------------------*/ 
+/* aplica estilo para todos os containers que envolvem uma pergunta */ 
 .container-perguntas{
     border: 2px solid black;
     padding: 20px;
     border-radius: 7px;
     margin: 5px;
     width:70%;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px; */
+    font-size: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.30) 5px 5px 0px;
+    /* box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5); */
 }
 
-/*-----esse também aplica estilo para o container da pergunta, mas o foco desse é mais para fazer o posicionamento do conteúdo interno dele -------*/
+/*esse também aplica estilo para o container da pergunta, mas o foco desse é mais para fazer o posicionamento do conteúdo interno dele */
 .container2{
     display: grid;
     grid-template-columns: 95% 5%;
@@ -106,59 +109,151 @@ h3{
     align-items: center;
 }
 
-/* ------- define um tamanho de fonte das tag span que está dentro da tag h1 ---------------------*/
+/* define um tamanho de fonte das tag span que está dentro da tag h1 */
 
 h1 span{
     font-size: 2rem;
 }
 
-/* ----------  aplica estilos de fontes para as tags span e p -------------------------------*/
-span, p {
-    font-family: "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.125rem;
-    letter-spacing: 1px;
-    line-height: 1.32;
-}
+/*  aplica estilos de fontes para as tags span e p */
 
-/* ----------------- define tamanho da imagem/ icone do sinal de mais( + ) ------------------------- */
+span, p, .sobre-conta {
+    font-family: "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+
+
+/*  define tamanho da imagem/ icone do sinal de mais( + ) */
 div img{
     width: 1.3em;
 }
 
-/* -------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*aplica estilo para footer e o seus conteúdos */
+#rodape {
+    width: 100%;
+    /* background-color: #f37d2f; */
+    background-color: rgba(255, 192, 76, 0.744);
+    min-height: 100px;
+    height: 500px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 30% 30%;
+    column-gap: 10px;
+
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+
+    position: relative;
+}
+
+/* aplica estilo para os atalhos que estão no footer */
+
+#container-atalhos{
+    height: 140px;
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    font-size: 1.5rem;
+}
+
+#container-atalhos a , a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#container-atalhos a:hover {
+    color: white;
+}
+/* ----------------------------------------------- */
+
+
+/*define estilo para os primeiros elementos da direita para esquerda*/
+#container-primeira-coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 300px;
+}
+
+/*---------------------------------------*/
+
+
+/*aplica estilo para os icones no footer*/
+#container-icones{
+    text-align: center;
+}
+
+.icone-rodape{
+    width: 26px;
+    height: 26px;
+    margin: 10px;
+}
+
+/* -------------------------------------------------- */
+
+
+/*define estilo para as colunas de informação (TRANSPARENCIA E CONTATOS)*/
+.contatos{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contatos2{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+/* ------------------------------------*/
+
+
+/* aplica estilo para o container do logo e do icone copy */
+#container-icone-e-copy{
+    position: absolute;
+    top: 75%;
+    width: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#container-copy{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:350px;
+}
+
+#copy{
+    width:20px;
+}
+/* -----------------------------------------------*/
 
 
 
 
 /* --------------------------Aplica o display: none em todos ícones com o sinal de mais  para fazer o javascript funcionar ---------------------- */
 
-#resposta01{
+#resposta01, #resposta02, #resposta03, #resposta04, #resposta05, #resposta06, 
+#resposta07, #resposta08, #resposta09, #resposta10 {
     display: none;
 }
-#resposta02{
-    display: none;
-}
-#resposta03{
-    display: none;
-}
-#resposta04{
-    display: none;
-}
-#resposta05{
-    display: none;
-}
-#resposta06{
-    display: none;
-}
-#resposta07{
-    display: none;
-}
-#resposta08{
-    display: none;
-}
-#resposta09{
-    display: none;
-}
-#resposta10{
-    display: none;
+
+#pergunta1, #pergunta2, #pergunta3, #resposta4, #resposta5, #resposta6,
+#resposta7, #resposta8, #resposta9, #resposta10 {
+    cursor: pointer;
 }
