@@ -97,7 +97,6 @@ h3{
     width:70%;
     font-size: 1.25rem;
     box-shadow: rgba(0, 0, 0, 0.30) 5px 5px 0px;
-    /* box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5); */
 }
 
 /*esse também aplica estilo para o container da pergunta, mas o foco desse é mais para fazer o posicionamento do conteúdo interno dele */
@@ -130,11 +129,12 @@ div img{
 
 
 
+
 /*aplica estilo para footer e o seus conteúdos */
 #rodape {
     width: 100%;
-    /* background-color: #f37d2f; */
     background-color: rgba(255, 192, 76, 0.744);
+    /* background-color: #da8e03; */
     min-height: 100px;
     height: 500px;
     
@@ -235,11 +235,12 @@ div img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:350px;
+    /* width:350px; */
+    width: 21.875rem;
 }
 
 #copy{
-    width:20px;
+    width: 1.25em;
 }
 /* -----------------------------------------------*/
 
@@ -253,7 +254,145 @@ div img{
     display: none;
 }
 
-#pergunta1, #pergunta2, #pergunta3, #resposta4, #resposta5, #resposta6,
-#resposta7, #resposta8, #resposta9, #resposta10 {
+#pergunta1, #pergunta2, #pergunta3, #pergunta4, #pergunta5, #pergunta6,
+#pergunta7, #pergunta8, #pergunta9, #pergunta10 {
     cursor: pointer;
 }
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* ============================ Aplica tudo relacionado a responsividade na pagina central de duvida ============================ */
+
+
+@media screen and (max-device-width: 380px) and (max-device-height: 670px){
+
+    /* abaixo, estilo do header */
+    .inicio-pagina .links {
+        display: none;
+    }
+    .inicio-pagina .botao-login {
+        font-size: 25px;
+    }
+    .inicio-pagina img {
+        max-width: 70px;
+    }
+    /* define estilo das caixas de perguntas e respostas */
+
+    #h1{
+        font-size: 1.5rem;
+    }
+
+    .sobre-conta{
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+    .container-perguntas{
+        font-size: 1.125rem;
+        width: 325px;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        margin-left: 10px;
+    }
+
+    h3{
+        font-size: 1.25rem;
+        /* font-size: 1.5rem; */
+    }
+    .respostas{
+        font-size:1rem;
+    } 
+    
+    /* aplica estilo no footer */
+    
+    #rodape {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 20px 0;
+        background-color: #f37d2f;
+    }
+    #container-primeira-coluna {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .contatos {
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+        padding: 20px 0;
+    }
+    .contatos span {
+        margin: 5px 0;
+    }
+
+
+    #container-icone-e-copy {
+        position: inherit;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #img-footer {
+        display: none;
+    }
+
+    #container-copy {
+        width: 100%;
+        margin: 4px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* #rodape{
+        background-color: #f37d2f;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1r);
+        height: 43.75rem;
+        position: relative;
+        margin-top: -5px;
+    }
+    #container-icones{
+        width: 200px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -10%);
+    }
+    #container-atalhos a , a:visited{
+        color: black;
+        text-decoration: none;
+    }
+    #container-atalhos{
+        font-size: 1.2rem;
+        margin-left: -10px;
+        margin-top: -150px;
+    }
+    .frases-footer{
+        font-size: 14px;
+    }
+    .titulo-footer{
+        font-size: 1.25rem;
+    }
+    .contatos{
+        margin-top: -50px;
+        margin-left: -10px;
+    }
+    #img-footer{
+        display: none;
+    }
+    #container-icone-e-copy{
+        display: none;
+    } */
+}   
