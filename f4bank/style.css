@@ -369,3 +369,109 @@ body {
 #copy{
     width:20px;
 }
+
+
+
+
+@media (max-width: 600px) {
+    /* abaixo, estilo do header */
+    .inicio-pagina .links {
+        display: none;
+    }
+    .inicio-pagina .botao-login {
+        font-size: 25px;
+    }
+    .inicio-pagina img {
+        max-width: 70px;
+    }  
+    
+    /*abaixo, estilo do container-principal*/
+    .container-principal .container-frase {
+        font-size: 2em;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container-form {
+        max-width: 450px;
+        max-height: 650px;
+        font-size: 14px;
+    }
+    
+    /* abaixo, estilo do cashback*/
+    .cashback {
+        border-radius: 15px;
+    }
+    section.cashback h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+    .cashback span {
+        font-size: 42px;
+        font-weight: bold;
+    }
+    .cashback p {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* abaixo, estilo do container-secundario */
+    .container-secundario h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-secundario a {
+        font-size: 22px;
+    }
+    .container-secundario .img-containerSec {
+        max-height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*abaixo, estilo do footer*/
+    #rodape {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 20px 0;
+        background-color: #f37d2f;
+    }
+    #container-primeira-coluna {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .contatos {
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+        padding: 20px 0;
+    }
+    .contatos span {
+        margin: 5px 0;
+    }
+    
+
+    #container-icone-e-copy {
+        position: inherit;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #img-footer {
+        display: none;
+    }
+
+    #container-copy {
+        width: 100%;
+        margin: 4px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
