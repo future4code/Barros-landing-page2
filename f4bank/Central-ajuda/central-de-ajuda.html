@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central de Ajuda</title>
-    <link rel="stylesheet" href="central-de-ajuda.css">
+    <link rel="stylesheet" href="/Central-ajuda/central-de-ajuda.css">
     <link href="../imagens/F4B.png" rel="icon">
+
 </head>
 <body>
     <header id="inicio-central" class="inicio-pagina">
-        <a href="/index.html"><img src="/imagens/F4B.png"></a>
+        <a href="../index.html"><img src="../imagens/F4B.png"></a>
         <nav class="links">
-            <a href="/index.html">F4bank</a>
-            <a href="/Sobre/sobre.html">Sobre</a>
+            <a href="../index.html">F4bank</a>
+            <a href="../Sobre/sobre.html">Sobre</a>
             <a href="#inicio-central">Central de ajuda</a>
         </nav>
         <a class="botao-login" href="../login/login.html">Login ></a>
@@ -22,7 +23,7 @@
     <main>
         <div>
             <h1>
-                <span>
+                <span id="h1">
                     Dicas e respostas da Equipe F4bank
                 </span>
             </h1>
@@ -41,7 +42,7 @@
                 onclick= "transformaEmMais();" >
             </div>
 
-            <div id="resposta01">
+            <div class="respostas" id="resposta01">
                 <br><br>
                 <span>A conta digital do F4bank foi projetada para todos que desejam serviços bancários transparentes, simples e sem taxas abusivas.
                     <br> Ele foi criado para redefinir a maneira como você administra seu dinheiro. Para cumprir esse papel, a conta digital do F4bank:
@@ -63,7 +64,7 @@
                 onclick="transformaEmMenos2();"
                 onclick= "transformaEmMais2();">
             </div>
-            <div id="resposta02">
+            <div class="respostas" id="resposta02">
                 <br><br>
                 <span>Sua conta digital do F4bank não tem anuidade, e você não pagará nada para transferir seu dinheiro para outro banco ou para fazer depósitos via boleto bancário. Você também não paga nada para receber ou ativar um cartão com a opção de débito. </span>
                 <br><br>
@@ -79,7 +80,7 @@
                 onclick="transformaEmMenos3();"
                 onclick= "transformaEmMais3();">
             </div>
-            <div id="resposta03">
+            <div class="respostas" id="resposta03">
                 <br><br>
                 <span>Nós possuimos dois tipos de conta: a conta pagamento e a conta corrente.</span>
                 <br>
@@ -100,7 +101,7 @@
                 onclick="transformaEmMenos4();"
                 onclick= "transformaEmMais4();">
             </div>
-            <div id="resposta04">
+            <div class="respostas" id="resposta04">
                 <br><br>
                 <span>Você não precisa passar por nenhum tipo de verificação de crédito para abrir uma conta digital do F4bank. Realizamos apenas uma análise de inscrição. Além disso, nossos únicos requisitos para os clientes são: <br> 
                 ter no mínimo 18 anos, ser residente no Brasil, ter CPF regular na Receira Federal Brasileira e um smartphone compatível com nosso aplicativo para Android ou iOS.</span>
@@ -118,7 +119,7 @@
                 onclick="transformaEmMenos5();"
                 onclick= "transformaEmMais5();">
             </div>
-            <div id="resposta05">
+            <div class="respostas" id="resposta05">
                 <br><br>
                 <span> Como usamos canais 100% digitais e reduzimos ao mínimo a burocracia, podemos repassar a você apenas economia, e não custos. A única taxa que temos para o cartão de crédito F4bank é para a adesão ao programa de benefícios do nosso cartão. Ao contrário da maioria dos outros cartões, essa taxa é opcional e nos permite oferecer ainda mais benefícios para ajudá-lo a otimizar sua vida.</span>
             </div>
@@ -131,7 +132,7 @@
                 onclick="transformaEmMenos6();"
                 onclick= "transformaEmMais6();">
             </div>
-            <div id="resposta06">
+            <div class="respostas" id="resposta06">
                 <br><br>
                 <span>Além do controle simples e transparente de seus gastos em tempo real (sem taxas ou anuidade), você também pode obter descontos por pagar suas parcelas antecipadamente. No app, você ainda pode bloquear e desbloquear seu cartão, solicitar aumento de limite de crédito e alterar a data de vencimento da sua fatura. Saiba mais sobre cada funcionalidade e seus respectivos termos em nossa página inicial.</span>
             </div>
@@ -143,7 +144,7 @@
                 onclick="transformaEmMenos7();"
                 onclick= "transformaEmMais7();">
             </div>
-            <div id="resposta07">
+            <div class="respostas" id="resposta07">
                 <br><br>
                 <span>
                     O cartão de crédito F4bank foi pensado para todos que desejam uma experiência simples e transparente na hora de gerenciar seus gastos.<br>
@@ -166,7 +167,7 @@
                 onclick="transformaEmMenos8();"
                 onclick= "transformaEmMais8();">
             </div>
-            <div id="resposta08">
+            <div class="respostas" id="resposta08">
                 <br><br>
                 <span>
                 Você pode entrar em contato com a gente pelo telefone, no 4124 5381 (Capitais e Regiões Metropolitanas), 0800 123 0529 (demais localidades). Caso você seja deficiente de fala e audição, entre em contato com a gente através do 0800 123 9876. 
@@ -183,7 +184,7 @@
                 onclick="transformaEmMenos9();"
                 onclick= "transformaEmMais9();">
             </div>
-            <div id="resposta09">
+            <div class="respostas" id="resposta09">
                 <br><br>
                 <span>Você pode falar no nosso SAC através do telefone 0800 101 0101. Este canal está disponível 24h,<br> 
                 todos os dias da semana.</span>
@@ -197,7 +198,7 @@
                 onclick="transformaEmMenos10();"
                 onclick= "transformaEmMais10();">
             </div>
-            <div id="resposta10">
+            <div class="respostas" id="resposta10">
                 <br><br>
                 <span>
                     Nosso setor de atendimento está pronto para te ajudar! <br>
@@ -212,65 +213,64 @@
     </main>
 
     <footer id="rodape">
-        <div id="container-primeira-coluna">
+        <div id="container-primeira-coluna" >
             <nav id="container-atalhos">
-                <a href="/index.html">Inicio</a>
-                <a href="/Sobre/sobre.html">Sobre</a>
+                <a href="../index.html">Inicio</a>
+                <a href="../Sobre/sobre.html">Sobre</a>
                 <a href="../Login/login.html">Login</a>
                 <a href="#inicio-central">Central de ajuda</a>
         </nav>
 
             <div id="container-icones">
                 <h3>Siga o F4bank</h3>
-                <a href="https://pt-br.facebook.com/"><img class="icone-rodape" src="/imagens/icons8-facebook.png" alt="icone do facebook"></a>
-                <a href="https://www.instagram.com/"><img class="icone-rodape" src="/imagens/icons8-instagram.png" alt="icone do instagram"></a>
-                <a href="https://www.linkedin.com/home"><img class="icone-rodape" src="/imagens/icons8-linkedin.png" alt="icone do linkedin"></a>
-                <a href="https://twitter.com/?lang=pt-br" tabindex=""><img class="icone-rodape" src="/imagens/icons8-twitter.png" alt="icone do twitter"></a>
+                <a href="https://pt-br.facebook.com/"><img class="icone-rodape"  src="../imagens/icons8-facebook.png" alt="icone do facebook"></a>
+                <a href="https://www.instagram.com/"><img class="icone-rodape" src="../imagens/icons8-instagram.png" alt="icone do instagram"></a>
+                <a href="https://www.linkedin.com/home"><img class="icone-rodape"  src="../imagens/icons8-linkedin.png" alt="icone do linkedin"></a>
+                <a href="https://twitter.com/?lang=pt-br" tabindex=""><img class="icone-rodape" src="../imagens/icons8-twitter.png" alt="icone do twitter"></a>
             </div>
         </div>
 
         <div class="contatos2">
-            <h3>Transparência</h3>
+            <h3 class="titulo-footer">Transparência</h3>
 
-            <span>Política de Privacidade </span>
+                <span class="frases-footer">Política de Privacidade </span>
 
-            <span>Política de Conformidade </span>
+                <span class="frases-footer">Política de Conformidade </span>
 
-            <span>Ética e Conformidade </span>
+                <span class="frases-footer">Ética e Conformidade </span>
 
-            <span>Segurança</span>
+                <span class="frases-footer">Segurança</span>
 
-            <span>Operações </span>
+                <span class="frases-footer">Operações </span>
 
-            <span>Negocie a sua dívida </span>
-
+                <span class="frases-footer">Negocie a sua dívida </span>
         </div>
 
         
         <div class="contatos">
-            <h3>Fale com a gente</h3>
+            <h3 class="titulo-footer">Fale com a gente</h3>
 
-            <span>Capitais e regiões metropolitanas <br>
+            <span class="frases-footer">Capitais e regiões metropolitanas <br>
                 <strong>4124 5381</strong>
             </span>
             
-            <span>Demais localidades <br>
+            <span class="frases-footer">Demais localidades <br>
                 <strong>0800 123 0529</strong>
             </span>
             
-            <span>SAC (24 horas)  <br>
+            <span class="frases-footer">SAC (24 horas)  <br>
                 <strong>0800 101 0101</strong>                
             </span>
 
-            <span>Deficiente de fala e audição <br>
+            <span class="frases-footer">Deficiente de fala e audição <br>
                 <strong>0800 123 9876</strong>
             </span>
 
-            <span>Ouvidoria <br>
+            <span class="frases-footer">Ouvidoria <br>
                 <strong>0800 321 9786</strong>
             </span>
 
-            <span> <strong>Não ligamos pra você por esses <br>
+            <span class="frases-footer"> <strong>Não ligamos pra você por esses <br>
                 telefones. </strong>Também não solicitamos dados <br> 
                 pessoais, senha da conta, código de <br>
                 transação por telefone. Estes números são <br>
@@ -279,9 +279,9 @@
         </div>
         
         <div id="container-icone-e-copy">
-            <img src="/imagens/F4B.png" style="width: 50px;">
+            <img id="img-footer" src="../imagens/F4B.png" style="width: 50px;">
             <div id="container-copy">
-                <img id="copy" src="/imagens/icons8-copyright.png"   alt="icone copyright">
+                <img id="copy" src="../imagens/icons8-copyright.png" alt="icone copyright">
                 <span>2022 F4bank S.A.</span>
                 <span>CNPJ: 00.321.123/9876-54</span>
             </div>
