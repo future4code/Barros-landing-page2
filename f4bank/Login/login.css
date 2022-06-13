@@ -54,8 +54,8 @@ body {
 
 .container-login {
     max-width: 30vw;
-    min-width: 280px;
-    min-height: 600px;
+    min-width: 320px;
+    height: 60vh;
     background-color: #fff;
     margin: 10% auto 0;
     display: flex;
@@ -108,4 +108,23 @@ body {
 .container-login nav a:hover {
     text-decoration: underline #f1f1f1;
     color: #000;
+}
+
+
+@media (max-width: 600px) {
+    .inicio-pagina .links {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 22px;
+    }
+    .inicio-pagina .links a {
+        padding: 5px ;
+        margin: 0 5px;
+    }
+    .inicio-pagina img {
+        display: none;
+    }
+    .container-login {
+        height: 520px;
+    }
 }
