@@ -288,6 +288,83 @@ body {
     text-align: center;
 }
 
+/* ====== CENTRAL DE AJUDA =======*/ 
+
+/* define display e padding para a parte da central de ajuda */
+#central-de-ajuda{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* aplica um tamanho de fonte para todos os h3 */
+#central-de-ajuda h3{
+    font-size: 26.4px;
+}
+
+/*  aplica estilo para titulos (h2) */
+.sobre-conta{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color:#da8e03;
+}
+
+
+/* aplica estilo para todos os containers que envolvem uma pergunta */ 
+.container-perguntas{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 5px;
+    width:70%;
+    font-size: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.30) 5px 5px 0px;
+}
+
+/*esse também aplica estilo para o container da pergunta, mas o foco desse é mais para fazer o posicionamento do conteúdo interno dele */
+.container2{
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* define um tamanho de fonte das tag span que está dentro da tag h1 */
+
+#central-de-ajuda h1 span{
+    font-size: 2rem;
+}
+
+/*  aplica estilos de fontes para as tags span e p */
+
+#central-de-ajuda span, p, .sobre-conta {
+    font-family: "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+
+
+/*  define tamanho da imagem/ icone do sinal de mais( + ) */
+#central-de-ajuda div img{
+    width: 1.3em;
+}
+
+
+/* --------------------------Aplica o display: none em todos ícones com o sinal de mais  para fazer o javascript funcionar ---------------------- */
+
+#resposta01, #resposta02, #resposta03, #resposta04, #resposta05, #resposta06, 
+#resposta07, #resposta08, #resposta09, #resposta10 {
+    display: none;
+}
+
+#pergunta1, #pergunta2, #pergunta3, #pergunta4, #pergunta5, #pergunta6,
+#pergunta7, #pergunta8, #pergunta9, #pergunta10 {
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+
 
 
 /*aplica estilo para footer e o seus conteúdos */
@@ -481,6 +558,33 @@ body {
         width: 100%;
     }
 
+
+    /* ====== responsividade parte da cental de ajuda ====== */
+    #central-de-ajuda h1{
+        font-size:1.4rem;
+    }
+    .sobre-conta{
+        text-align: center;
+        font-size: 0.75em;
+    }
+    .container-perguntas{
+        font-size: 1.125rem;
+        /* width: 325px; */
+        width:20.50rem;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        margin-left: 10px;
+    }
+    #central-de-ajuda h3{
+        font-size: 1.25rem;
+    }
+    .respostas{
+        font-size:1.2rem;
+    }
 
     /*abaixo, estilo do footer*/
     #rodape {
