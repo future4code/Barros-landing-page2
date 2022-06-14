@@ -260,6 +260,35 @@ body {
 }
 /* ------------------------------------------------*/
 
+/*   Display de texto sobre */
+
+#sobre{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif ;
+}
+
+/*fonte de todas h1*/
+#sobre h1{
+    font-size: 38px;
+}
+
+/* fonte de todos os p */
+#sobre p{
+    margin: 0px 0px 16px;
+    white-space: pre-line;
+    font-size: 1.5rem
+       
+}
+
+.Texto1, .Texto2{
+    text-align: center;
+}
+
+
 
 /*aplica estilo para footer e o seus conteúdos */
 #rodape {
@@ -430,6 +459,28 @@ body {
         width: 100%;
         text-align: center;
     }
+
+    .imagem-pessoas{
+        width: 100%;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        overflow-x: scroll;
+    }
+
+    .imagem-pessoas img{
+        
+        height: 400px;
+
+    }
+
+    .logo-f4bank{
+        width: 100%;
+    }
+
+    .logo-f4bank img{
+        width: 100%;
+    }
+
 
     /*abaixo, estilo do footer*/
     #rodape {
