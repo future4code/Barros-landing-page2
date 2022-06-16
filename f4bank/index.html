@@ -15,17 +15,41 @@
 </head>
 <body>
     <header class="inicio-pagina" id="inicio">
-        <a href="index.html"><img src="imagens/F4B.png"></a>
-        <nav class="links">
-            <a href="#f4bank">F4bank</a>
-            <a target="_blank" href="Sobre/sobre.html">Sobre</a>
-            <a href="#rodape">Contatos</a>
-            <a target="_blank" href="Central-ajuda/central-de-ajuda.html">Central de ajuda</a>
+        <a href="index.html" class="tirar-no-media-1"><img src="imagens/F4B.png"></a>
+        <nav>
+           <ul class="links">
+               <li> <a href="#f4bank" class="tirar-no-media">F4bank</a></li>
+               <li><a href="#sobre">Sobre</a></li>
+               <li><a href="#rodape">Contatos</a></li>
+               <li><a  href="#central-de-ajuda">Central de ajuda</a></li>
+           </ul>
         </nav>
-        <a class="botao-login" href="Login/login.html">Login ></a>  
-    </header>
+        <div class="botao-login" href="Login/login.html">
+            <h4 id="login-drop" onclick="clicou()">Login</h4>
 
-    <div class="container-principal">
+            <div id="fazer-login" >
+                <div class="container-login">
+                    <form class="login">
+                        <div class="login-cpf">
+                            <label for="cpf">CPF</label><br> 
+                            <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="...........">
+                        </div>
+                        <div class="login-senha">
+                            <labe for="senha">Senha</label><br>
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                        </div>
+                        <input class="botao-enviar" type="submit" name="enviar" id="enviar" value="CONTINUAR">
+                    </form>
+                    <nav>
+                        <a href="#central-de-ajuda">Esqueci minha senha </a>
+                        <a href="#cadastro">Ainda não sou cliente</a>
+                    </nav>
+                </div>
+            </div>
+        </div>  
+    </header>
+    <!--///////////////////////////////////////////////////////////////////////////-->
+    <div class="container-principal" id="container-principal" onclick="reclicou()">
         <div class="container-frase">
             <h2>
                 <span class="texto-laranja">20 milhões</span>
@@ -36,7 +60,7 @@
             </span>
             </h2>
         </div>
-
+        
         <div class="container-form" id="cadastro">
             <main>
                 <h2>Abra agora sua Conta Digital</h2>
@@ -74,7 +98,7 @@
             </main> 
         </div>
     </div>
-    
+    <!--///////////////////////////////////////////////////////////////////////////-->
     <section class="cashback">
         <div>
             <h2>O F4Bank já devolveu tudo isso de cashback:</h2>
@@ -89,7 +113,7 @@
             <a href="#cadastro">Ganhar cashback </a>
         </div>
     </section>
-
+    <!--///////////////////////////////////////////////////////////////////////////-->
     <section>
         <div class="container-secundario" id="f4bank">
             <div class="frase-containerSec">
@@ -106,7 +130,7 @@
             </div>
         </div>
     </section>
-    
+    <!--///////////////////////////////////////////////////////////////////////////-->
     <section id="sobre">
         <div class="imagem-pessoas">
             <img src="imagens/pessoas-laranja.jpg" alt="pessoas">
@@ -167,7 +191,7 @@
             <img src="imagens/f4bank.png" alt="">
         </div>
     </section>
-
+    <!--///////////////////////////////////////////////////////////////////////////-->
 
     <section id="central-de-ajuda">
         <div>
@@ -205,7 +229,7 @@
             </div>
 
         </div>
-
+ 
         <div class="container-perguntas">
             <div class="container2">
             <h3>Existem taxas?</h3>
@@ -299,7 +323,7 @@
                     O cartão de crédito F4bank foi pensado para todos que desejam uma experiência simples e transparente na hora de gerenciar seus gastos.<br>
                     Os requisitos são os mesmos para abrir um conta digital, são eles: <br>
                     ter no mínimo 18 anos, ser residente no Brasil, ter CPF regular na Receira Federal Brasileira e um smartphone compatível com nosso aplicativo para Android ou iOS.  <br><br>
-                    Todos os interessados ​​em ter um cartão F4bank passam por uma avaliação de cadastro e uma verificação de crédito. 
+                    Todos os interessados em ter um cartão F4bank passam por uma avaliação de cadastro e uma verificação de crédito. 
                 </span>
             </div>
         </div>
@@ -360,7 +384,7 @@
             </div>
         </div>
     </section>
-
+    <!--///////////////////////////////////////////////////////////////////////////-->
 
 
 
@@ -368,9 +392,8 @@
         <div id="container-primeira-coluna">
             <nav id="container-atalhos">
                 <a href="#inicio">Inicio</a>
-                <a href="Sobre/sobre.html" target="_blank">Sobre</a>
-                <a href="Login/login.html" target="_blank">Login</a>
-                <a href="Central-ajuda/central-de-ajuda.html" target="_blank">Central de ajuda</a>
+                <a href= #sobre>Sobre</a>
+                <a href="#central-de-ajuda">Central de ajuda</a>
             </nav>
 
             <div id="container-icones">
@@ -441,6 +464,7 @@
         </div>
 
     </footer>
+
     <script src="/javascript/scripts.js" defer></script>
 </body>
 </html>

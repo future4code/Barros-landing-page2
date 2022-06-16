@@ -244,3 +244,39 @@ btn10.addEventListener('click', function () {
         transformaEmMenos10();
     }
 });
+// ------------------------------------------------------------------------------------------
+
+
+// -------------- evento do click do formulario de login no header ///
+//// copiei na cara dura do guilherme 
+
+const botaoLogin = document.querySelector("#login-drop");
+const formLogin = document.querySelector("#fazer-login");
+
+const corpoPagina = document.querySelector("#container-principal");
+function clicou () {
+    document.getElementById("login-drop").textContent="Login"
+}
+function reclicou () {
+    document.getElementById("login-drop").textContent="Login"
+}
+
+botaoLogin.addEventListener('click', function () {
+
+    if(formLogin.style.display === 'block'){
+        formLogin.style.display = 'none';
+        clicou()
+       
+    }else{
+        formLogin.style.display = 'block';
+        document.getElementById("login-drop").textContent="Sair"
+    }
+});
+
+corpoPagina.addEventListener('click', function reclicou () {
+
+    if(formLogin.style.display === 'block'){
+        formLogin.style.display = 'none';
+        reclicou()
+    }
+})

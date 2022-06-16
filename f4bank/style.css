@@ -21,7 +21,7 @@ body {
     box-shadow: 0px 2px 5px  #0e0900a1;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    min-height: 110px;
+    min-height: 80px;
 }
 .inicio-pagina  img {
     width: 80px;
@@ -30,18 +30,25 @@ body {
 /* ------------------------------------------------*/
 
 /* inicio, parte dos links */
-.inicio-pagina .links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 15px;
-    margin: 10px 5px;
+.inicio-pagina .links {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.inicio-pagina .links a{
+    padding: 10px;
+    margin: 2px 5px;
     border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
 }
 .inicio-pagina .links a:hover {
     transition: 150ms;
-    color: #050505;
     background-color: #f1f1f1;
     box-shadow: 1px 1px 3px #00000083;
+    color: #f37d2f;
 }
 
 .inicio-pagina .links a:active {
@@ -50,47 +57,96 @@ body {
 /* ------------------------------------------------*/
 
 /* inicio, parte login de usuario*/
-.inicio-pagina .botao-login {
+.botao-login{
+    position: relative;
+}
+
+.inicio-pagina .botao-login h4 {
     font-size: 35px;
     color: #f8f8f8;
     padding: 10px 35px ;
     border-radius: 15px;
     text-decoration: none;
+    display: inline-block;
 }
-.inicio-pagina .botao-login:hover {
+.inicio-pagina .botao-login h4:hover {
     background-color: #f1f1f1;
     color: black;
-    border: 1px solid #f1f1f1;
     box-shadow: 1px 1px 3px #00000083;
     text-decoration: underline;
+    
 }
-.inicio-pagina .botao-login:active {
+.inicio-pagina .botao-login h4:active {
     color: #da8e03;
 }
 /* ------------------------------------------------*/
-/*
-.inicio-pagina .login {
+
+/* abaixo, estilo do container-login*/
+#fazer-login {
+    display: none;
+}
+.container-login {
+    position: absolute;
+    right: 0;
+    max-width: 30vw;
+    min-width: 320px;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 5px;
+
     display: flex;
-    flex-wrap: wrap;
-    border: 1px solid;
-    padding: 10px;
-    border-radius: 15px;
-    background-image: linear-gradient(to left,#ffb01ef8, #ffc82f, #f0880055 ) ;
-    color: #fff;
-    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;  
+    color: #000;
+    box-shadow: 1px 3px 10px #000000;
+  
 }
-.login div {
-    margin: 0 10px;
-}
-.login input {
-    border-radius: 5px;
-    font-size: 15px;
-    width: 140px;
-    padding: 4px;
-    margin: 2px 0;
+.container-login .login {
+    margin: 30px 0;
+    font-size: 25px;
+    line-height: 2;
+
+    display: flex;
+    flex-direction: column;
 }
 
-*/
+.container-login .login input {
+    font-size: 20px;
+    padding: 6px 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+.container-login .login input:hover {
+    box-shadow: -1px 2px 2px #00000065;
+}
+.container-login .login input.botao-enviar {
+    background-color: #f08a06;
+    margin-top: 15px;
+}
+.container-login .login input.botao-enviar:hover {
+    background-color: #131313;
+    color: #fff;
+    border: 1px transparent;
+}
+
+.container-login nav {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.8;
+    font-size: 20px;
+}
+.container-login nav a {
+    color: #f37d2f;
+    text-decoration: none;
+}
+.container-login nav a:hover {
+    text-decoration: underline #f1f1f1;
+    color: #000;
+}
 
 /*aplica estilo no container principal */
 .container-principal {
@@ -260,8 +316,13 @@ body {
 }
 /* ------------------------------------------------*/
 
-/*   Display de texto sobre */
 
+
+
+
+
+
+/*   Display de texto sobre */
 #sobre{
     display:flex;
     flex-direction: column;
@@ -280,7 +341,7 @@ body {
 #sobre p{
     margin: 0px 0px 16px;
     white-space: pre-line;
-    font-size: 1.5rem
+    font-size: 1.5rem;
        
 }
 
@@ -475,21 +536,46 @@ body {
 #copy{
     width:20px;
 }
-
-
+@media (max-width: 840px){
+    .inicio-pagina .tirar-no-media-1 {
+        display: none;
+    }
+    .inicio-pagina a {
+        font-size: 20px;
+    }
+    .inicio-pagina .botao-login h4 {
+        font-size: 25px;
+    }
+}
 
 
 @media (max-width: 600px) {
     /* abaixo, estilo do header */
-    .inicio-pagina .links {
+    .inicio-pagina {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .inicio-pagina .links a{
+        font-size: 16px;
+        padding: 8px 6px;
+        margin: 0 3px;
+    }
+    .tirar-no-media {
         display: none;
     }
-    .inicio-pagina .botao-login {
-        font-size: 25px;
+    .inicio-pagina .botao-login h4{
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+        background-color: #fff;
+        padding: 6px 10px;
     }
-    .inicio-pagina img {
-        max-width: 70px;
-    }  
+    .container-login {
+        margin-top: 56px;
+    }
+
     
     /*abaixo, estilo do container-principal*/
     .container-principal .container-frase {
@@ -537,6 +623,7 @@ body {
         text-align: center;
     }
 
+    /*abaixo, estilo do sobre*/
     .imagem-pessoas{
         width: 100%;
         margin-bottom: 60px;
