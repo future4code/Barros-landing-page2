@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* ------------------------------------------------*/
+
+/* inicio, container que envolve todo header */
+.inicio-pagina {
+    background-image: linear-gradient(to right,#fcc051,#f37d2f,#f37d2fe3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px  #0e0900a1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    min-height: 80px;
+}
+.inicio-pagina  img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+/* ------------------------------------------------*/
+
+/* inicio, parte dos links */
+.inicio-pagina .links {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.inicio-pagina .links a{
+    padding: 10px;
+    margin: 2px 5px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+}
+.inicio-pagina .links a:hover {
+    transition: 150ms;
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 3px #00000083;
+    color: #f37d2f;
+}
+
+.inicio-pagina .links a:active {
+    color: #da8e03;
+}
+/* ------------------------------------------------*/
+
+/* inicio, parte login de usuario*/
+.botao-login{
+    position: relative;
+}
+
+.inicio-pagina .botao-login h4 {
+    font-size: 35px;
+    color: #f8f8f8;
+    padding: 10px 35px ;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.inicio-pagina .botao-login h4:hover {
+    background-color: #f1f1f1;
+    color: black;
+    box-shadow: 1px 1px 3px #00000083;
+    text-decoration: underline;
+    
+}
+.inicio-pagina .botao-login h4:active {
+    color: #da8e03;
+}
+/* ------------------------------------------------*/
+
+/* abaixo, estilo do container-login*/
+#fazer-login {
+    display: none;
+}
+.container-login {
+    position: absolute;
+    right: 0;
+    max-width: 30vw;
+    min-width: 320px;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;  
+    color: #000;
+    box-shadow: 1px 3px 10px #000000;
+  
+}
+.container-login .login {
+    margin: 30px 0;
+    font-size: 25px;
+    line-height: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container-login .login input {
+    font-size: 20px;
+    padding: 6px 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+.container-login .login input:hover {
+    box-shadow: -1px 2px 2px #00000065;
+}
+.container-login .login input.botao-enviar {
+    background-color: #f08a06;
+    margin-top: 15px;
+}
+.container-login .login input.botao-enviar:hover {
+    background-color: #131313;
+    color: #fff;
+    border: 1px transparent;
+}
+
+.container-login nav {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.8;
+    font-size: 20px;
+}
+.container-login nav a {
+    color: #f37d2f;
+    text-decoration: none;
+}
+.container-login nav a:hover {
+    text-decoration: underline #f1f1f1;
+    color: #000;
+}
+
+/*aplica estilo no container principal */
+.container-principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    min-height: 80vh;
+}
+/* ------------------------------------------------*/
+
+/* aplica estilo no container-frase dentro do container principal*/
+.container-frase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.texto-laranja {
+    color:#f37d2f;  
+    font-style: italic; 
+}
+/* ------------------------------------------------*/
+
+/* aplica estilo do campo de formulario */
+.container-principal .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f37d2f;
+    color: #242323;
+    width: 500px;
+    height: 800px;
+    border-radius: 15px;
+    box-shadow: -1px 2px 2px #00000081;
+}
+
+.container-principal .container-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+/* abaixo, estilo dos inputs do container-principal */
+
+.container-principal label {
+    font-size: 1.7em;
+}
+.container-principal .container-form input {
+    font-size: 1.4em;    
+    padding: 5px;
+    border: 1px solid #00000098;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.container-principal .container-form input:hover {
+    box-shadow: 1px 2px 3px #000;
+}
+/* abaixo, estilo da div que ta o checkbox*/
+.container-principal .checkbox {
+    display: flex;
+    margin-top: 5px;
+}
+.container-principal .checkbox input {
+    margin-right: 5px;
+    padding: 10px;
+}
+
+/*aplica estilo no botão do form */
+#botao {
+    margin-top: 5px;
+    padding: 5px;
+    
+    border: 2px solid #0e0d0d;
+    border-radius: 5px;
+    width: 200px;
+}
+/* ------------------------------------------------*/
+
+
+/* abaixo, estilo da section cashback*/
+.cashback {
+    margin-top: 60px;
+    background-color: #f37d2f;
+    height: 500px;
+    font-size: 1.8em;
+    color: #f1f1f1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 1px 3px #00000069;
+}
+.cashback span {
+    font-size: 3.6em;
+}
+.cashback .link-cashback {
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.cashback .link-cashback:hover {
+    background-image: linear-gradient(to right, #1d1b1b,#884418,#353333);
+    box-shadow: 0 2px 2px black;
+}
+
+.cashback .link-cashback a {
+    color: #f37d2f;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+.cashback .link-cashback a:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+/* ------------------------------------------------*/
+
+
+
+/* abaixo, estilo do container secundario*/
+.container-secundario {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin-top: 80px;
+}
+.container-secundario .frase-containerSec {
+    margin-bottom: 40px;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 1.6em;
+    line-height: 2em;
+    height: 350px;
+}
+.container-secundario .frase-containerSec a {
+    background-color: #f37d2f;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.container-secundario .frase-containerSec a:hover {
+    background-image: linear-gradient(to right, #000000,#f37d2f,#000000);
+    text-decoration: underline;
+}
+.container-secundario .img-containerSec {
+    height: 800px;
+    margin-top: 20px;
+}
+.container-secundario .img-containerSec img {
+    height: 100%;
+}
+/* ------------------------------------------------*/
+
+
+
+
+
+
+
+/*   Display de texto sobre */
+#sobre{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif ;
+}
+
+/*fonte de todas h1*/
+#sobre h1{
+    font-size: 38px;
+}
+
+/* fonte de todos os p */
+#sobre p{
+    margin: 0px 0px 16px;
+    white-space: pre-line;
+    font-size: 1.5rem;
+       
+}
+
+.Texto1, .Texto2{
+    text-align: center;
+}
+
+/* ====== CENTRAL DE AJUDA =======*/ 
+
+/* define display e padding para a parte da central de ajuda */
+#central-de-ajuda{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* aplica um tamanho de fonte para todos os h3 */
+#central-de-ajuda h3{
+    font-size: 26.4px;
+}
+
+/*  aplica estilo para titulos (h2) */
+.sobre-conta{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color:#da8e03;
+}
+
+
+/* aplica estilo para todos os containers que envolvem uma pergunta */ 
+.container-perguntas{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 5px;
+    width:70%;
+    font-size: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.30) 5px 5px 0px;
+}
+
+/*esse também aplica estilo para o container da pergunta, mas o foco desse é mais para fazer o posicionamento do conteúdo interno dele */
+.container2{
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* define um tamanho de fonte das tag span que está dentro da tag h1 */
+
+#central-de-ajuda h1 span{
+    font-size: 2rem;
+}
+
+/*  aplica estilos de fontes para as tags span e p */
+
+#central-de-ajuda span, p, .sobre-conta {
+    font-family: "Graphik-Regular", "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
+
+
+/*  define tamanho da imagem/ icone do sinal de mais( + ) */
+#central-de-ajuda div img{
+    width: 1.3em;
+}
+
+
+/* --------------------------Aplica o display: none em todos ícones com o sinal de mais  para fazer o javascript funcionar ---------------------- */
+
+#resposta01, #resposta02, #resposta03, #resposta04, #resposta05, #resposta06, 
+#resposta07, #resposta08, #resposta09, #resposta10 {
+    display: none;
+}
+
+#pergunta1, #pergunta2, #pergunta3, #pergunta4, #pergunta5, #pergunta6,
+#pergunta7, #pergunta8, #pergunta9, #pergunta10 {
+    cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/*aplica estilo para footer e o seus conteúdos */
+#rodape {
+    width: 100%;
+    /* background-color: #f37d2f; */
+    background-color: rgba(255, 192, 76, 0.744);
+    min-height: 100px;
+    height: 500px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 30% 30%;
+    column-gap: 10px;
+
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+
+    position: relative;
+}
+/* ----------------------------------- */
+
+/* ----------------------------- aplica estilo para os atalhos que estão no footer ---------------------------------*/
+#container-atalhos{
+    height: 140px;
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    font-size: 1.5rem;
+}
+
+#container-atalhos a , a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#container-atalhos a:hover {
+    color: white;
+}
+/* ----------------------------------------------- */
+
+
+/*define estilo para os primeiros elementos da direita para esquerda*/
+#container-primeira-coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 300px;
+}
+/*---------------------------------------*/
+
+
+/*aplica estilo para os icones no footer*/
+#container-icones{
+    text-align: center;
+}
+
+.icone-rodape{
+    width: 26px;
+    height: 26px;
+    margin: 10px;
+}
+/* -------------------------------------------------- */
+
+
+/*define estilo para as colunas de informação (TRANSPARENCIA E CONTATOS)*/
+.contatos{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contatos2{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+/* ------------------------------------*/
+
+
+/* aplica estilo para o container do logo e do icone copy */
+#container-icone-e-copy{
+    position: absolute;
+    top: 75%;
+    width: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#container-copy{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:350px;
+}
+
+#copy{
+    width:20px;
+}
+@media (max-width: 840px){
+    .inicio-pagina .tirar-no-media-1 {
+        display: none;
+    }
+    .inicio-pagina a {
+        font-size: 20px;
+    }
+    .inicio-pagina .botao-login h4 {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    /* abaixo, estilo do header */
+    .inicio-pagina {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .inicio-pagina .links a{
+        font-size: 16px;
+        padding: 8px 6px;
+        margin: 0 3px;
+    }
+    .tirar-no-media {
+        display: none;
+    }
+    .inicio-pagina .botao-login h4{
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+        background-color: #fff;
+        padding: 6px 10px;
+    }
+    .container-login {
+        margin-top: 56px;
+    }
+
+    
+    /*abaixo, estilo do container-principal*/
+    .container-principal .container-frase {
+        font-size: 2em;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .container-form {
+        max-width: 450px;
+        max-height: 650px;
+        font-size: 14px;
+    }
+    
+    /* abaixo, estilo do cashback*/
+    .cashback {
+        border-radius: 15px;
+    }
+    section.cashback h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+    .cashback span {
+        font-size: 42px;
+        font-weight: bold;
+    }
+    .cashback p {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* abaixo, estilo do container-secundario */
+    .container-secundario h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container-secundario a {
+        font-size: 22px;
+    }
+    .container-secundario .img-containerSec {
+        max-height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*abaixo, estilo do sobre*/
+    .imagem-pessoas{
+        width: 100%;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        overflow-x: scroll;
+    }
+
+    .imagem-pessoas img{
+        
+        height: 400px;
+
+    }
+
+    .logo-f4bank{
+        width: 100%;
+    }
+
+    .logo-f4bank img{
+        width: 100%;
+    }
+
+
+    /* ====== responsividade parte da cental de ajuda ====== */
+    #central-de-ajuda h1{
+        font-size:1.4rem;
+    }
+    .sobre-conta{
+        text-align: center;
+        font-size: 0.75em;
+    }
+    .container-perguntas{
+        font-size: 1.125rem;
+        /* width: 325px; */
+        width:20.50rem;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        margin-left: 10px;
+    }
+    #central-de-ajuda h3{
+        font-size: 1.25rem;
+    }
+    .respostas{
+        font-size:1.2rem;
+    }
+
+    /*abaixo, estilo do footer*/
+    #rodape {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 20px 0;
+        background-color: #f37d2f;
+    }
+    #container-primeira-coluna {
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .contatos {
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+        padding: 20px 0;
+    }
+    .contatos span {
+        margin: 5px 0;
+    }
+    
+
+    #container-icone-e-copy {
+        position: inherit;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #img-footer {
+        display: none;
+    }
+
+    #container-copy {
+        width: 100%;
+        margin: 4px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

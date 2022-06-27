@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon"  type="image/jpg"  href="imagens/F4B.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>F4Bank</title>
+    <link href="/imagens/F4B.png" rel="icon">
+
+</head>
+<body>
+    <header class="inicio-pagina" id="inicio">
+        <a href="index.html" class="tirar-no-media-1"><img src="imagens/F4B.png"></a>
+        <nav>
+           <ul class="links">
+               <li> <a href="#f4bank" class="tirar-no-media">F4bank</a></li>
+               <li><a href="#sobre">Sobre</a></li>
+               <li><a href="#rodape">Contatos</a></li>
+               <li><a  href="#central-de-ajuda">Central de ajuda</a></li>
+           </ul>
+        </nav>
+        <div class="botao-login" href="Login/login.html">
+            <h4 id="login-drop" onclick="clicou()">Login</h4>
+
+            <div id="fazer-login" >
+                <div class="container-login">
+                    <form class="login">
+                        <div class="login-cpf">
+                            <label for="cpf">CPF</label><br> 
+                            <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="...........">
+                        </div>
+                        <div class="login-senha">
+                            <labe for="senha">Senha</label><br>
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                        </div>
+                        <input class="botao-enviar" type="submit" name="enviar" id="enviar" value="CONTINUAR">
+                    </form>
+                    <nav>
+                        <a href="#central-de-ajuda">Esqueci minha senha </a>
+                        <a href="#cadastro">Ainda não sou cliente</a>
+                    </nav>
+                </div>
+            </div>
+        </div>  
+    </header>
+    <!--///////////////////////////////////////////////////////////////////////////-->
+    <div class="container-principal" id="container-principal" onclick="reclicou()">
+        <div class="container-frase">
+            <h2>
+                <span class="texto-laranja">20 milhões</span>
+                <span >de clientes.</span>
+                <br>
+                <span>Essa é a 
+                <span class="texto-laranja">Nação Laranja.</span>
+            </span>
+            </h2>
+        </div>
+        
+        <div class="container-form" id="cadastro">
+            <main>
+                <h2>Abra agora sua Conta Digital</h2>
+                <form>
+                    <label for="nome">Nome Completo:</label>
+                    <br>
+                    <input class="campo-formulario" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input class="campo-formulario" type="email" name="email" id="email" placeholder="Seu e-mail">
+                    <br>
+                    <label for="cpf">CPF:</label>
+                    <br>
+                    <input class="campo-formulario" type="text" name="cpf" id="cpf" maxlength="11" placeholder="Digite seu CPF">
+                    <br>
+                    <label for="tel">Telefone:</label>
+                    <br>
+                    <input class="campo-formulario" type="tel" name="tel" id="tel" placeholder="Digite seu numero">
+                    <br>
+                    <label for="data">Data de Nascimento:</label>
+                    <br>
+                    <input class="campo-formulario" type="tel" name="data" id="data"  placeholder="dd/mm/aaaa" maxlength="10">
+                    <br>
+                    <div class="checkbox">
+                        <input type="checkbox" >
+                        <span>Autoriso o F4bank a tratar meus dados <br> pessoais para envio de comunicações <br>
+                        sobre seus produtos e serviços e  <br>
+                        também estou de acordo com a <br>
+                        <span>Política de Privacidade</span></span>
+                    </div>
+                    <br>
+                    <input id="botao" type="submit" name="enviar" id="enviar" value="Continuar">
+                </form>
+            </main> 
+        </div>
+    </div>
+    <!--///////////////////////////////////////////////////////////////////////////-->
+    <section class="cashback">
+        <div>
+            <h2>O F4Bank já devolveu tudo isso de cashback:</h2>
+        </div>
+        <div>            
+            <span>R$ 447.633.431,97</span>
+        </div>
+        <div>
+            <p>Quer ganhar cashback também? Clique no botão abaixo:</p>
+        </div>
+        <div class="link-cashback">
+            <a href="#cadastro">Ganhar cashback </a>
+        </div>
+    </section>
+    <!--///////////////////////////////////////////////////////////////////////////-->
+    <section>
+        <div class="container-secundario" id="f4bank">
+            <div class="frase-containerSec">
+                <h2>
+                    <span class="texto-laranja">Conta do F4Bank</span><br>
+                    A conta que vai levar você ao<br>
+                    controle da sua vida financeira.
+                </h2>
+                <a href="#inicio" class="texto-laranja">Sem tarifas e sem complicações</a>
+            </div>
+
+            <div class="img-containerSec">
+                <img src="imagens/1649356374-.webp">
+            </div>
+        </div>
+    </section>
+    <!--///////////////////////////////////////////////////////////////////////////-->
+    <section id="sobre">
+        <div class="imagem-pessoas">
+            <img src="imagens/pessoas-laranja.jpg" alt="pessoas">
+        </div>
+        <div>
+            <h1>
+                <span>
+                    Sobre nós
+                </span>
+            </h1><br>
+        </div>
+
+        <div>
+            <h3>Construindo o futuro</h3><br>
+        </div>
+
+        <div class="Texto1">
+            <p>Imagine um mundo diferente, onde o que importa são os seus valores, 
+                e não o valor na sua conta. 
+                O F4Bank surgiu para construir este mundo com você, simplificando a 
+                sua vida financeira com transparência e segurança. 
+                Desde o dia 1, tratamos as pessoas como seres humanos e não como números. 
+                Desconstruímos complexidade, burocracias e aquele jeito antigo de lidar com dinheiro. 
+                Ousamos ser diferentes para você ser o protagonista da sua própria vida. 
+                Desde o primeiro dia, ainda é dia 1 por aqui. 
+                Quem quer reinventar a relação das pessoas com suas vidas financeiras não tem
+                tempo para pegadinhas, enrolação ou letras miúdas. 
+                Temos um mundo novo para construir. Dez anos atrás, o futuro laranja 
+                começou. 
+                E agora, ele está presente na vida de mais de 40 milhões de 
+                pessoas, em três países e em todas as cidades do Brasil. 
+                Bem-vindos ao F4Bank.
+
+            </p>
+        </div>
+        <div>
+            <h2>
+                <span>
+                    Somos diferentes
+                </span>
+            </h2>
+        </div>
+        <div class="Texto2">
+            <p>
+                Somos uma empresa de tecnologia com espírito jovem e inovador que desenvolve
+                 soluções simples, seguras e digitais para sua vida financeira.
+                 O jeito F4B de fazer as coisas nasceu do inconformismo e se transformou 
+                 numa força para construir produtos justos e de forma transparente para 
+                 você. 
+                 Seu dinheiro vai estar na nossa conta, mas o controle dele será todo seu. 
+                 E se você precisar de ajuda, estaremos aqui, 24h por dia, prontos para 
+                 ajudar com os nossos especialistas. 
+                 Somos uma empresa construída por e para pessoas. 
+                 E, por isso, estamos confiantes que o F4Bank é para você.
+            </p>
+        </div>
+        <div class="logo-f4bank">
+            <img src="imagens/f4bank.png" alt="">
+        </div>
+    </section>
+    <!--///////////////////////////////////////////////////////////////////////////-->
+
+    <section id="central-de-ajuda">
+        <div>
+            <h1>
+                <span id="h1">
+                    Dicas e respostas da Equipe F4bank
+                </span>
+            </h1>
+        </div>
+
+        <div class="sobre-conta">
+            <h2>Sobre a conta digital F4bank</h2>
+        </div>
+
+
+        <div class="container-perguntas">    
+            <div class="container2">
+            <h3>O que é um conta digital do F4bank? </h3>
+                <img  id="pergunta1" src="imagens/icone-de-mais.png" rel="icon" alt="icone do sinal de mais"
+                onclick="transformaEmMenos();"
+                onclick= "transformaEmMais();" >
+            </div>
+ 
+            <div class="respostas" id="resposta01">
+                <br>
+                <span>A conta digital do F4bank foi projetada para todos que desejam serviços bancários transparentes, simples e sem taxas abusivas.
+                    <br> Ele foi criado para redefinir a maneira como você administra seu dinheiro. Para cumprir esse papel, a conta digital do F4bank:
+                </span>
+                    <br><br>
+                <p>— Oferece transferências gratuitas e ilimitadas para qualquer banco; </p>
+                <br>
+                <p>— Inclui um cartão com opção de débito para que possa efetuar compras ou levantamentos em dinheiro. </p>
+                <br>
+                <p>— Não possui anuidade ou taxas de manutenção;</p>
+            </div>
+
+        </div>
+ 
+        <div class="container-perguntas">
+            <div class="container2">
+            <h3>Existem taxas?</h3>
+                <img id="pergunta2"   src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos2();"
+                onclick= "transformaEmMais2();">
+            </div>
+            <div class="respostas" id="resposta02">
+                <br>
+                <span>Sua conta digital do F4bank não tem anuidade, e você não pagará nada para transferir seu dinheiro para outro banco ou para fazer depósitos via boleto bancário. Você também não paga nada para receber ou ativar um cartão com a opção de débito. </span>
+                <br><br>
+                <span>Nossos clientes podem utilizar qualquer caixa eletrônico das redes Banco24Horas e Saque e Pague para realizar saques. Contudo, você pagará uma taxa de R$ 4,50 para cada saque realizado, que é exatamente o que temos que pagar para usar essas redes de saque.</span>
+            
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+            <h3>Qual é o tipo da conta digital do F4bank?</h3>
+                <img id="pergunta3" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos3();"
+                onclick= "transformaEmMais3();">
+            </div>
+            <div class="respostas" id="resposta03">
+                <br>
+                <span>Nós possuimos dois tipos de conta: a conta pagamento e a conta corrente.</span>
+                <br>
+                <span>Diferença entre as contas: </span>
+
+                <br><br>
+
+                <span>A diferença da conta pagamento para corrente é a liberação de alguns serviços como, por exemplo, o CDB, limite de crédito e a escolha de cor do cartão. Esses, são serviços que só quem possui a conta corrente podem utilizar. <br>
+                Além disso, conta pagamento é voltada para clientes que possuem apenas a função débito liberada.
+                </span>
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Para quem é a conta do F4bank?</h3>
+                <img id="pergunta4" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos4();"
+                onclick= "transformaEmMais4();">
+            </div>
+            <div class="respostas" id="resposta04">
+                <br>
+                <span>Você não precisa passar por nenhum tipo de verificação de crédito para abrir uma conta digital do F4bank. Realizamos apenas uma análise de inscrição. Além disso, nossos únicos requisitos para os clientes são: <br> 
+                ter no mínimo 18 anos, ser residente no Brasil, ter CPF regular na Receira Federal Brasileira e um smartphone compatível com nosso aplicativo para Android ou iOS.</span>
+            </div>
+        </div>
+
+        <div class="sobre-conta">
+            <h2>Sobre o cartão F4bank</h2>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Quais taxas são cobradas pelo cartão F4bank?</h3>
+                <img id="pergunta5" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos5();"
+                onclick= "transformaEmMais5();">
+            </div>
+            <div class="respostas" id="resposta05">
+                <br>
+                <span> Como usamos canais 100% digitais e reduzimos ao mínimo a burocracia, podemos repassar a você apenas economia, e não custos. A única taxa que temos para o cartão de crédito F4bank é para a adesão ao programa de benefícios do nosso cartão. Ao contrário da maioria dos outros cartões, essa taxa é opcional e nos permite oferecer ainda mais benefícios para ajudá-lo a otimizar sua vida.</span>
+            </div>
+        </div>
+        
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Quais são as vantagens do nosso cartão de crédito?</h3>
+                <img id="pergunta6" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos6();"
+                onclick= "transformaEmMais6();">
+            </div>
+            <div class="respostas" id="resposta06">
+                <br>
+                <span>Além do controle simples e transparente de seus gastos em tempo real (sem taxas ou anuidade), você também pode obter descontos por pagar suas parcelas antecipadamente. No app, você ainda pode bloquear e desbloquear seu cartão, solicitar aumento de limite de crédito e alterar a data de vencimento da sua fatura. Saiba mais sobre cada funcionalidade e seus respectivos termos em nossa página inicial.</span>
+            </div>
+        </div>
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Para quem é o nosso cartão de crédito</h3>
+                <img id="pergunta7" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos7();"
+                onclick= "transformaEmMais7();">
+            </div>
+            <div class="respostas" id="resposta07">
+                <br>
+                <span>
+                    O cartão de crédito F4bank foi pensado para todos que desejam uma experiência simples e transparente na hora de gerenciar seus gastos.<br>
+                    Os requisitos são os mesmos para abrir um conta digital, são eles: <br>
+                    ter no mínimo 18 anos, ser residente no Brasil, ter CPF regular na Receira Federal Brasileira e um smartphone compatível com nosso aplicativo para Android ou iOS.  <br><br>
+                    Todos os interessados em ter um cartão F4bank passam por uma avaliação de cadastro e uma verificação de crédito. 
+                </span>
+            </div>
+        </div>
+
+
+        <div class="sobre-conta">
+            <h2>Contato do F4bank </h2>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Como entro em contato com o F4bank?</h3>
+                <img id="pergunta8" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos8();"
+                onclick= "transformaEmMais8();">
+            </div>
+            <div class="respostas" id="resposta08">
+                <br>
+                <span>
+                Você pode entrar em contato com a gente pelo telefone, no 4124 5381 (Capitais e Regiões Metropolitanas), 0800 123 0529 (demais localidades). Caso você seja deficiente de fala e audição, entre em contato com a gente através do 0800 123 9876. 
+                <br>
+                Caso prefira, você também pode entrar em contato com a gente pelo chat.  
+                Nossos canais de atendimento estão disponíveis 24h, todos os dias da semana.</span>
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Como falo no SAC do F4bank</h3>
+                <img id="pergunta9" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos9();"
+                onclick= "transformaEmMais9();">
+            </div>
+            <div class="respostas" id="resposta09">
+                <br>
+                <span>Você pode falar no nosso SAC através do telefone 0800 101 0101. Este canal está disponível 24h,<br> 
+                todos os dias da semana.</span>
+            </div>
+        </div>
+
+        <div class="container-perguntas">
+            <div class="container2">
+                <h3>Quero registrar uma reclamação. O que faço?</h3>
+                <img id="pergunta10" src="imagens/icone-de-mais.png" rel="icon"
+                onclick="transformaEmMenos10();"
+                onclick= "transformaEmMais10();">
+            </div>
+            <div class="respostas" id="resposta10">
+                <br>
+                <span>
+                    Nosso setor de atendimento está pronto para te ajudar! <br>
+                    Entre em contato conosco através do telefone 4124 5381 para capitais e regiões metropolitanas ou 0800 123 0529 para demais localidades. 
+                </span>
+                <br><br>
+                <span>
+                    Caso o seu problema não seja resolvido e você queira registrar uma reclamação, entre em contato com a Ouvidoria no telefone 0800 321 9786.
+                </span>
+            </div>
+        </div>
+    </section>
+    <!--///////////////////////////////////////////////////////////////////////////-->
+
+
+
+    <footer id="rodape">
+        <div id="container-primeira-coluna">
+            <nav id="container-atalhos">
+                <a href="#inicio">Inicio</a>
+                <a href= #sobre>Sobre</a>
+                <a href="#central-de-ajuda">Central de ajuda</a>
+            </nav>
+
+            <div id="container-icones">
+                <h3>Siga o F4bank</h3>
+                <a href="https://pt-br.facebook.com/" target="_blank"><img class="icone-rodape" src="imagens/icons8-facebook.png" alt="icone do facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="icone-rodape" src="imagens/icons8-instagram.png" alt="icone do instagram"></a>
+                <a href="https://www.linkedin.com/home" target="_blank"><img class="icone-rodape" src="imagens/icons8-linkedin.png" alt="icone do linkedin"></a>
+                <a href="https://twitter.com/?lang=pt-br" target="_blank" tabindex=""><img class="icone-rodape" src="imagens/icons8-twitter.png" alt="icone do twitter"></a>
+            </div>
+        </div>
+
+        <div class="contatos2">
+            <h3>Transparência</h3>
+
+            <span>Política de Privacidade </span>
+
+            <span>Política de Conformidade </span>
+
+            <span>Ética e Conformidade </span>
+
+            <span>Segurança</span>
+
+            <span>Operações </span>
+
+            <span>Negocie a sua dívida </span>
+
+        </div>
+
+        
+        <div class="contatos">
+            <h3>Fale com a gente</h3>
+
+            <span>Capitais e regiões metropolitanas <br>
+                <strong>4124 5381</strong>
+            </span>
+            
+            <span>Demais localidades <br>
+                <strong>0800 123 0529</strong>
+            </span>
+            
+            <span>SAC (24 horas)  <br>
+                <strong>0800 101 0101</strong>                
+            </span>
+
+            <span>Deficiente de fala e audição <br>
+                <strong>0800 123 9876</strong>
+            </span>
+
+            <span>Ouvidoria <br>
+                <strong>0800 321 9786</strong>
+            </span>
+
+            <span> <strong>Não ligamos pra você por esses <br>
+                telefones. </strong>Também não solicitamos dados <br> 
+                pessoais, senha da conta, código de <br>
+                transação por telefone. Estes números são <br>
+                apenas para você fazer ligações para o <br>
+                F4bank.</span>
+        </div>
+        
+        <div id="container-icone-e-copy">
+            <img src="imagens/F4B.png" style="width: 50px;" id="img-footer">
+            <div id="container-copy">
+                <img id="copy" src="imagens/icons8-copyright.png" alt="icone copyright">
+                <span>2022 F4bank S.A.</span>
+                <span>CNPJ: 00.321.123/9876-54</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="/javascript/scripts.js" defer></script>
+</body>
+</html>
